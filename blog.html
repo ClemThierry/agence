@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/styleB.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <script>
+        var x = true;
+
+        function openclose() {
+
+            if (x) {
+                document.querySelector("nav").style.left = "-200px";
+                document.querySelector("main").style.left = "50px";
+                document.querySelector("footer").style.left = "50px";
+                x = !x;
+            } else {
+                document.querySelector("nav").style.left = "0px";
+                document.querySelector("main").style.left = "250px";
+                document.querySelector("footer").style.left = "250px";
+                x = !x;
+            }
+
+
+
+        }
+    </script>
+    <title>HoneyCom</title>
+</head>
+
+<body>
+    <!--------------------->
+    <!--Partie naviagtion-->
+    <!--------------------->
+
+    <nav>
+        <img src="img/logo.png">
+        <img class="bouton" onclick="openclose()" src="img/menu.png">
+        <ul>
+            <li><a class="lien" href="index.html">Accueil</a></li>
+            <li><a class="lien" href="projet.html">Nos Projets</a></li>
+            <li><a class="lien" href="equipe.html">L'équipe</a></li>
+            <li><a class="lien" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>HoneyBlog</h1>
+        <article>
+            <h2>Webdesign : pourquoi démarrer son projet de création de site avec un <i>Wireframe</i> ?</h2>
+            <figure>
+                <img src="img/pageaccueil.PNG" alt="" />
+                <figcaption><i>Wireframe</i> réalisé par l’agence pour le projet de site web pour
+                    <span>l’Amicale</span> des départements
+                    <span> MMI et SGM</span> à l’IUT de Mulhouse. </figcaption>
+            </figure>
+            <p>
+                <span>Lors de la conception d’un site web, on sera amené à schématiser ce dernier avec l’outil <i>Wireframe</i>, en français maquette fonctionnelle. Que ce soit pour créer son site ou procéder à sa refonte intégrale, cette pratique présente des atouts indéniables. </span>
+            </p>
+            <h3>Simplifier pour travailler sur des bases solides</h3>
+            <p>
+                <p>L’élaboration du <i>Wireframe</i> consiste en la création d’un croquis ou d’un <span> schéma numérique</span> destiné à représenter le produit final, à savoir le site web fonctionnel qui aura intégré toutes les fonctionnalités nécessaires.
+                    Avant de produire le site commandé par le client, il s’agit de <span> définir l’architecture du projet</span>. Visuellement c’est la première idée que l’on peut se faire du produit fini.</p>
+                <p>La maquette fonctionnelle, généralement réalisée en noir, en blanc et avec quelques nuances de gris pour les futures zones colorées, permet de <span> visualiser la structure du site web</span>. On pourra dès lors distinguer l’emplacement
+                    des images, des vidéos, des liens sans oublier des zones de texte. Le concepteur du <i>Wireframe</i> est chargé d’identifier les différentes zones de la page qu’il schématise avec des blocs. L’objectif ici est de déterminer les grandes
+                    fonctionnalités et les éléments principaux des pages web. Du point de vue des designers, c’est une vraie référence. Pour les développeurs et graphistes aussi, le <i>Wireframe</i> permet de comprendre quelles seront les futures fonctionnalités
+                    du site web. Rapide et simple à réaliser, le <i>Wireframe</i> utilise un langage commun, clair et précis : il est donc très efficace pour <span> optimiser la communication interne</span> entre les membres de l’équipe projet ! </p>
+            </p>
+            <h3>Optimiser l’expérience utilisateur et ses conditions de travail </h3>
+            <p>
+                <p>En élaborant la maquette fonctionnelle, il s’agit de comprendre qui seront les futurs internautes lecteurs du site web. D’un point de vue du design, il est important d’opter pour des choix qui correspondent aux attentes du commanditaire
+                    et à l’audience cible. L’utilisateur étant de plus en plus exigeant, le <i>Wireframe</i> permet de poser les bases de la future interface en simulant le fonctionnement du site web. En étudiant les possibles difficultés, on peut ainsi
+                    <span> établir
+                    une première estimation du temps et du coût de développement</span> en fonction de l’ergonomie du produit qui est attendue. </p>
+                <p>Travailler la maquette fonctionnelle se fait de différentes façons. Certains préfèrent coucher leurs <span> idées</span> sur papier, d’autres utilisent un des nombreux logiciels prévus à cet effet, et ces logiciels sont pour la plupart
+                    gratuits ! Une fois que les idées sont inscrites quelque part, c’est la <span> créativité</span> qui fait le reste. </p>
+            </p>
+            <p>
+                Une fois<span> la maquette fonctionnelle</span> établie, l’équipe chargée du projet peut alors se pencher sur le <span><i>Wireframe</i></span> pour discuter et établir les nombreux objectifs à réaliser par la suite. Le designer graphique
+                de l’équipe se chargera ensuite d’établir <span>la maquette graphique</span>. Une fois ce travail d’avant-projet réalisé, c’est l’étape du <span>codage</span> du site web qui démarre. Pour finaliser le travail, les rédacteurs web ajouteront
+                <span>le contenu</span>.
+            </p>
+            <p class="auteur">Article écrit par Anthony BURCKARD</p>
+        </article>
+    </main>
+    <!-------------------->
+    <!--Partie Copyright-->
+    <!-------------------->
+
+    <footer>&copy; Copyright 2019 HoneyWeb</footer>
+
+</body>
+
+</html>
