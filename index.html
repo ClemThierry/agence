@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/styleI.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <script>
+        var x = true;
+
+        function openclose() {
+
+            if (x) {
+                document.querySelector("nav").style.left = "-200px";
+                document.querySelector(".basse").style.left = "50px";
+                document.querySelector("header").style.left = "50px";
+                document.querySelector("footer").style.left = "50px";
+                x = !x;
+            } else {
+                document.querySelector("nav").style.left = "0px";
+                document.querySelector(".basse").style.left = "250px";
+                document.querySelector("header").style.left = "250px";
+                document.querySelector("footer").style.left = "250px";
+                x = !x;
+            }
+
+
+
+        }
+    </script>
+    <title>HoneyCom</title>
+</head>
+
+<body>
+    <!--------------------->
+    <!--Partie naviagtion-->
+    <!--------------------->
+
+    <nav>
+        <img src="img/logo.png">
+        <img class="bouton" onclick="openclose()" src="img/menu.png">
+        <ul>
+            <li><a class="lien" href="projet.html">Nos Projets</a></li>
+            <li><a class="lien" href="equipe.html">L'équipe</a></li>
+            <li><a class="lien" href="contact.html">Contact</a></li>
+            <li><a class="lien" href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!----------------->
+    <!--Partie Entête-->
+    <!----------------->
+
+    <header>
+        <img src="img/honeyweb.jpg">
+    </header>
+
+    <!----------------------->
+    <!--Partie Présentation-->
+    <!----------------------->
+
+    <div class="basse">
+        <div class="texte">
+            <p>HoneyWeb c'est une agence composée de trois étudiants, chacun présente ses points forts et des compétences dans le web. Que ce soit dans la communication digitale, le design ou la programmation nous saurons répondre à toutes vos demandes afin
+                de produire un travail de qualité dans une ambiance à la fois sérieuse et décontractée.</p>
+            <p> Bien plus qu'une agence web. C'est l'agence qui saura mener à bien votre projet !</p>
+        </div>
+        <div class="image">
+            <img class="ant" src="img/anthony.jpg">
+            <img class="vass" src="img/vass.jpg">
+            <img class="clem" src="img/clem.jpg">
+        </div>
+    </div>
+    <!-------------------->
+    <!--Partie Copyright-->
+    <!-------------------->
+
+    <footer>&copy; Copyright 2019 HoneyWeb <a href="mention.html">Mentions Légales</a></footer>
+
+</body>
+
+</html>
