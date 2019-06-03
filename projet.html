@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/styleP.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <script>
+        var x = true;
+
+        function openclose() {
+
+            if (x) {
+                document.querySelector("nav").style.left = "-200px";
+                document.querySelector("main").style.left = "50px";
+                document.querySelector("footer").style.left = "50px";
+                x = !x;
+            } else {
+                document.querySelector("nav").style.left = "0px";
+                document.querySelector("main").style.left = "250px";
+                document.querySelector("footer").style.left = "250px";
+                x = !x;
+            }
+
+
+
+        }
+
+        function jauge() {
+            document.querySelector(".jauge>div").style.width = "100px";
+        }
+    </script>
+    <title>HoneyCom</title>
+</head>
+
+<body>
+    <!--------------------->
+    <!--Partie naviagtion-->
+    <!--------------------->
+
+    <nav>
+        <img src="img/logo.png">
+        <img class="bouton" onclick="openclose()" src="img/menu.png">
+        <ul>
+            <li><a class="lien" href="index.html">Accueil</a></li>
+            <li><a class="lien" href="equipe.html">L'équipe</a></li>
+            <li><a class="lien" href="contact.html">Contact</a></li>
+            <li><a class="lien" href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Nos projets</h1>
+        <article>
+            <img src="img/amicale.png">
+            <div>
+                <h2>Site pour l'Amicale MMI-SGM de l'IUT de Mulhouse</h2>
+                <p>Etant une jeune agence web nous n'avons pas encore beaucoup de clients. Cependant l'IUT de Mulhouse à su nous faire confiance en nous demandant de créer pour les étudiants des départements MMI (Métiers du Multimédia et de l'Internet) et
+                    SGM (Science et Génie des Matériaux) un site web. Ce site sera un espace numérique de ragroupement au même titre que l'est l'Amicale lorsqu'ils sont à l'IUT.</p>
+                <h3>Avancement du projet :</h3>
+                <div class="jauge" onmouseover="jauge()">
+                    <div></div>
+                </div>
+
+            </div>
+        </article>
+    </main>
+    <!-------------------->
+    <!--Partie Copyright-->
+    <!-------------------->
+
+    <footer>&copy; Copyright 2019 HoneyWeb <a href="mention.html">Mentions Légales</a></footer>
+
+</body>
+
+</html>

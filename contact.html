@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/styleC.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <script>
+        var x = true;
+
+        function openclose() {
+
+            if (x) {
+                document.querySelector("nav").style.left = "-200px";
+                document.querySelector("main").style.left = "50px";
+                document.querySelector("footer").style.left = "50px";
+                x = !x;
+            } else {
+                document.querySelector("nav").style.left = "0px";
+                document.querySelector("main").style.left = "250px";
+                document.querySelector("footer").style.left = "250px";
+                x = !x;
+            }
+
+
+
+        }
+    </script>
+    <title>HoneyCom</title>
+</head>
+
+<body>
+    <!--------------------->
+    <!--Partie naviagtion-->
+    <!--------------------->
+
+    <nav>
+        <img src="img/logo.png">
+        <img class="bouton" onclick="openclose()" src="img/menu.png">
+        <ul>
+            <li><a class="lien" href="index.html">Accueil</a></li>
+            <li><a class="lien" href="projet.html">Nos Projets</a></li>
+            <li><a class="lien" href="equipe.html">L'équipe</a></li>
+            <li><a class="lien" href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contactez-nous</h1>
+        <div class="conteneur">
+            <p>Si vous avez des questions sur les services que nous proposons où si vous voulez colaborez avec nous n'hésitez pas à nous contacter ! Nous nous ferons un plaisir de vous recontacter.</p>
+            <div>
+                <form id="contact" method="post" action="traitement_formulaire.php">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <p><label for="nom">Nom : </label><input class="texte" type="text" id="nom" name="nom" size="30px" /></p>
+                        <p><label for="email">Email : </label><input class="texte" type="text" id="email" name="email" size="30px" /></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Votre message</legend>
+                        <p><label for="objet">Objet : </label><input class="texte" type="text" id="objet" name="objet" size="30px" /></p>
+                        <p><label for="message">Message :</label><textarea class="texte" id="message" name="message" cols="50" rows="8"></textarea></p>
+                    </fieldset>
+
+                    <div style="text-align:center;"><button class="env" type="submit" style="vertical-align:middle"><span>Envoi </span></button></div>
+                </form>
+            </div>
+        </div>
+        <div class="reseaux">
+            <a href="https://www.facebook.com/agencehoneyweb"><img src="img/facebook.png"></a>
+            <a href="https://twitter.com/agencehoneyweb"><img src="img/twitter.png"></a>
+            <a href="https://www.linkedin.com/company/agencehoneyweb"><img src="img/linkedin.png"></a>
+            <a href="https://www.youtube.com/channel/UCpm8MM8DJZy-r0wfS8KWbyA/featured?fbclid=IwAR2PU1poCyhTIFpGppDTnIW4LKmYNNUnMHO0bNW0Kc40tgA4uIKAGhhM2ME"><img src="img/youtube.png"></a>
+        </div>
+    </main>
+    <!-------------------->
+    <!--Partie Copyright-->
+    <!-------------------->
+
+    <footer>&copy; Copyright 2019 HoneyWeb <a href="mention.html">Mentions Légales</a></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/styleM.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <script>
+        var x = true;
+
+        function openclose() {
+
+            if (x) {
+                document.querySelector("nav").style.left = "-200px";
+                document.querySelector("main").style.left = "50px";
+                document.querySelector("footer").style.left = "50px";
+                x = !x;
+            } else {
+                document.querySelector("nav").style.left = "0px";
+                document.querySelector("main").style.left = "250px";
+                document.querySelector("footer").style.left = "250px";
+                x = !x;
+            }
+
+
+
+        }
+    </script>
+    <title>HoneyCom</title>
+</head>
+
+<body>
+    <!--------------------->
+    <!--Partie naviagtion-->
+    <!--------------------->
+
+    <nav>
+        <img src="img/logo.png">
+        <img class="bouton" onclick="openclose()" src="img/menu.png">
+        <ul class="menu">
+            <li class="choix"><a class="lien" href="index.html">Accueil</a></li>
+            <li class="choix"><a class="lien" href="projet.html">Nos Projets</a></li>
+            <li class="choix"><a class="lien" href="equipe.html">L'équipe</a></li>
+            <li class="choix"><a class="lien" href="contact.html">Contact</a></li>
+            <li class="choix"><a class="lien" href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!------------------------------------------->
+    <!--Partie description des mentions légales-->
+    <!------------------------------------------->
+
+    <main>
+        <h1>Mentions Légales</h1>
+        <article>
+            <p>
+                Le site <a href="www.agence-honeyweb.000webhostapp.com">www.agence-honeyweb.000webhostapp.com</a> est édité par : <br> HONEYWEB <br> 61 rue Albert Camus <br> 68093 MULHOUSE Cedex <br> FRANCE <br>
+            </p>
+            <p>
+                Les icones du site <a href="www.agence-honeyweb.000webhostapp.com">www.agence-honeyweb.000webhostapp.com</a> viennent de <a href="https://icones8.fr">https://icones8.fr</a>.
+            </p>
+            <p>
+                Directrice de la publication et responsable de la rédaction : Clémence THIERRY
+            </p>
+            <p>
+                Le site <a href="www.agence-honeyweb.000webhostapp.com">www.agence-honeyweb.000webhostapp.com</a> est hébergé sur les serveurs de
+                <a href="https://fr.000webhost.com">https://fr.000webhost.com</a>.
+            </p>
+            <p>
+                Définitions : <br>
+                <ul>
+                    <li>Utilisateur : L’utilisateur est toute personne qui utilise le Site ou l’un des services proposés sur le Site.</li>
+                    <li>Contenu Utilisateur : Le terme « Contenu Utilisateur » désigne les données transmises par l’utilisateur dans les différentes rubriques du Site.</li>
+                    <li>Membre : Le terme « Membre » désigne un utilisateur identifié sur le site.</li>
+                    <li>Identifiant : Le terme « Identifiant » recouvre les informations nécessaires à l’identification d’un utilisateur sur le site pour accéder aux zones réservées aux membres.</li>
+                    <li>Mot de passe : Le « Mot de passe » est une information confidentielle, dont l’utilisateur doit garder le secret, lui permettant, utilisé conjointement avec son Identifiant, de prouver l’identité.</li>
+                </ul>
+            </p>
+        </article>
+    </main>
+    <!-------------------->
+    <!--Partie Copyright-->
+    <!-------------------->
+
+    <footer>&copy; Copyright 2019 HoneyWeb <a href="mention.html">Mentions Légales</a> </footer>
+
+</body>
+
+</html>

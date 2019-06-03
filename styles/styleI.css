@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+/********************/
+
+
+/*Menu de navigation*/
+
+
+/*******************/
+
+nav {
+    position: absolute;
+    color: #EADDCE;
+    font-size: 25px;
+    background-color: #4D2C37;
+    z-index: 1;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 30px;
+    transition-duration: 0.4s;
+}
+
+nav>img {
+    width: 140px;
+    height: 100px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 70%;
+    margin-right: 40px;
+}
+
+li {
+    margin-top: 40%;
+}
+
+.lien {
+    text-decoration: none;
+}
+
+.lien:link {
+    color: #EADDCE;
+}
+
+.lien:visited {
+    color: #EADDCE;
+}
+
+.lien:hover {
+    color: #f3d74d;
+}
+
+.bouton {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    width: 27px;
+    height: 27px;
+}
+
+
+/***********/
+
+
+/*Banderole*/
+
+
+/***********/
+
+header {
+    position: absolute;
+    margin: 0;
+    left: 250px;
+    right: 0;
+    height: 50%;
+    transition-duration: 0.4s;
+}
+
+header>img {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+
+/***************************/
+
+
+/*Partie basse de l'accueil*/
+
+
+/***************************/
+
+.basse {
+    position: absolute;
+    display: flex;
+    left: 250px;
+    right: 0;
+    top: 50%;
+    bottom: 18px;
+    padding: 10px;
+    background: linear-gradient(#F4B56B, #EADDCE, #EADDCE);
+    transition-duration: 0.4s;
+    color: #4D2C37;
+}
+
+.texte>p {
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image>img {
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    min-width: 170px;
+    max-width: 200px;
+    min-height: 170px;
+    max-height: 200px;
+}
+
+.clem {
+    left: 60%;
+    bottom: 50%;
+}
+
+.vass {
+    left: 75%;
+    bottom: 50%;
+}
+
+.ant {
+    left: 67.5%;
+    bottom: 10%;
+}
+
+.texte {
+    flex: 1;
+    padding: 10px;
+}
+
+
+/********/
+
+
+/*Footer*/
+
+
+/********/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    right: 0;
+    background-color: #EADDCE;
+    transition-duration: 0.4s;
+}
+
+footer>a {
+    text-decoration: none;
+    color: #4D2C37;
+    font-weight: bold;
+}
